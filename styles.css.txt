@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff0000; /* Red */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search input {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #00ff00; /* Green */
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.right {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    background-color: #0000ff; /* Blue */
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.question-box input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.question-box button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-feed .question {
+    margin-bottom: 20px;
+}
+
+.question-feed .question h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.question-feed .question p {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.question-feed .question a {
+    color: #00ff00; /* Green */
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ff0000; /* Red */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}

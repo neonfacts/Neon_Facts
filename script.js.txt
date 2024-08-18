@@ -1,0 +1,28 @@
+document.querySelector('.question-box button').addEventListener('click', function() {
+    const questionInput = document.querySelector('.question-box input');
+    const questionText = questionInput.value.trim();
+    
+    if (questionText) {
+        const newQuestion = document.createElement('div');
+        newQuestion.classList.add('question');
+        
+        const questionTitle = document.createElement('h3');
+        questionTitle.textContent = questionText;
+        
+        const questionDesc = document.createElement('p');
+        questionDesc.textContent = 'No answers yet. Be the first to answer.';
+        
+        const answerLink = document.createElement('a');
+        answerLink.href = '#';
+        answerLink.textContent = 'Answer';
+        answerLink.style.color = '#00ff00'; /* Green */
+        
+        newQuestion.appendChild(questionTitle);
+        newQuestion.appendChild(questionDesc);
+        newQuestion.appendChild(answerLink);
+        
+        document.querySelector('.question-feed').appendChild(newQuestion);
+        
+        questionInput.value = '';
+    }
+});
